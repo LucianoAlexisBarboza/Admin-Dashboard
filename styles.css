@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #a5b4fc;
+    background-color: blue;
 }
 
 .container {
@@ -94,71 +94,83 @@ body {
 
 /* Main section */
 
-.main-section {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    background-color: #a5b4fc;
-    gap: 16px;
+.left-part {
+    margin-left: 16px;
+
 }
 
-.left-part {
+.main-section {
     display: grid;
-    grid-template-rows: 30px 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cards {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-left: 32px;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    gap: 32px;
+}
+
+.text1, .text2, .text3 {
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    border-radius: 8px;
+    border-left: 6px red solid;
+    background-color: white;
+    padding: 32px;
 }
 
 .section {
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
     margin-top: auto;
-}
-
-.text1 {
-    grid-column: 1 / 3;
-    align-self: center;
+    gap: 16px;
 }
 
 /* Right part */
 
 .right-part {
-    display: grid;
-    gap: 32px;
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.announcement {
+    background-color: white;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.trending-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
 }
 
 .a2 {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 16px;
-    background-color: yellow;
-    border-radius: 16px;
-    margin-top: 26px;
+    gap: 10px;
 }
 
 .a3 {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 16px;
-    background-color: yellow;
-    border-radius: 16px;
+    gap: 10px;
+    padding: 32px;
 }
 
-.trending-card {
-    display: flex;
-    align-items: center;
-}
-
-.project-card {
-    background-color: yellow;
-    padding: 2rem;
-    border-radius: 16px;
-}
