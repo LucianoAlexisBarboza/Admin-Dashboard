@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: blue;
+    background-color: #1d4ed8;
 }
 
 .container {
@@ -16,14 +16,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #eef2ff;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1.2rem
 }
 
 .sidebar {
     height: 100vh;
     width: 20vw;
     background-color: #1e1b4b;
-    color: #eef2ff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,46 +41,45 @@ body {
     color: white;
 }
 
-.icon {
-    color: beige;
-}
-
 /* HEADER SECTION */
 
 .header {
     display: grid;
     grid-template-rows: 80px 80px;
+    grid-template-columns: 1fr 1fr;
     max-height: 160px;
     background-color: yellow;
 }
 
-.first-section {
-    padding-left: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.user, .support {
+    font-family: 'Gabarito', cursive;
+    font-size: 1.1rem;
+    
 }
+
 
 .search {
     display: flex;
     align-items: center;
+    grid-column: 1 / 2;
+    padding: 16px;
 }
 
 .text {
-    width: 500px;
-    height: 20px;
+    width: 100%;
 }
 
 .user-main {
     display: flex;
     align-items: center;
+    grid-column: 2 / 3;
 }
 
-.second-section {
+.buttons {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 30px;
     gap: 16px;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .btn {
@@ -88,7 +88,7 @@ body {
     font-size: 12px;
     border: none;
     border-radius: 16px;
-    width: 70px;
+    width: 80px;
     height: 35px;
 }
 
@@ -102,7 +102,7 @@ body {
 .main-section {
     display: grid;
     grid-template-columns: 3fr 1fr;
-}
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;}
 
 .cards {
     display: grid;
@@ -116,14 +116,17 @@ body {
     font-size: 24px;
     margin-top: 16px;
     margin-bottom: 8px;
+    font-family: 'Gabarito', cursive;
+    color: #eef2ff;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    border-left: 6px red solid;
-    background-color: white;
+    font-family: 'Gabarito', cursive;
+    border-left: 6px #1e1b4b solid;
+    background-color: #eff6ff;
     padding: 32px;
 }
 
@@ -147,6 +150,7 @@ body {
     background-color: white;
     border-radius: 8px;
     padding: 32px;
+    font-family: 'Gabarito', cursive;
 }
 
 .trending {
@@ -159,6 +163,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 16px;
+    font-family: 'Gabarito', cursive;
+    
 }
 
 .a2 {
@@ -173,4 +179,6 @@ body {
     gap: 10px;
     padding: 32px;
 }
+
+
 
